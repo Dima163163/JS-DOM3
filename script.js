@@ -1,6 +1,5 @@
 'use strict';
 const list = document.querySelector('.list');
-let newStr;
 
 //  Функция добавления элемента в список
 const setStrToList = (str) => {
@@ -25,7 +24,7 @@ const clearList = () => {
 
 // Бесконечный цикл
 while (true) {
-  newStr = prompt('Введите строку для добавления в список: ');
+  const newStr = prompt('Введите строку для добавления в список: ');
   if (newStr === 'del') {
     delStr();
     break;
